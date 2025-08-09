@@ -1,0 +1,30 @@
+package mysum;
+
+public class Sum {
+ 
+	    int calc(int start, int end) {
+	        int sum = 0;
+	        for (int i = start; i <= end; i++) sum += i;
+	        return sum;
+	    
+	}
+
+	
+
+}
+package mysum;
+
+public class Main {
+ 
+	    public static void main(String[] args) {
+	        Sum s = new Sum();
+	        System.out.println("Sum from 1 to 50: " + s.calc(1, 50));
+	    }
+	}
+
+output:
+  Sum from 1 to 100: 5050
+  Sum from 1 to 50: 1275
+  Sum from 1 to 10: 55
+  Sum from 50 to 100: 3825
+  Sum from 1 to 1: 1
