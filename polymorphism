@@ -1,0 +1,41 @@
+package device;
+
+
+	class SmartDevice {
+	    void showFeatures() {
+	        System.out.println("Generic Smart Device Features");
+	    }
+	}
+
+	class SmartPhone extends SmartDevice {
+	    @Override
+	    void showFeatures() {
+	        System.out.println("SmartPhone: Touchscreen, Camera, Internet, Apps");
+	    }
+	}
+
+	class SmartWatch extends SmartDevice {
+	    @Override
+	    void showFeatures() {
+	        System.out.println("SmartWatch: Heart Rate Monitor, Step Counter, Notifications");
+	    }
+	}
+
+	public class SmartDevices{
+	    public static void main(String[] args) {
+	        // Array of SmartDevice references
+	        SmartDevice[] devices = new SmartDevice[3];
+
+	        devices[0] = new SmartDevice();
+	        devices[1] = new SmartPhone();
+	        devices[2] = new SmartWatch();
+
+	       
+	        for (SmartDevice device : devices) {
+	            device.showFeatures();
+	        }
+	    }
+	}
+
+
+
